@@ -1,0 +1,1190 @@
+
+body{
+    font-family: lucida sans;
+    background: #ddd;
+   
+}
+/************************* about.html **************************/
+/* Header style */
+header{
+    background: transparent;
+    height: auto;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+header .logo h2{
+    font-size: 25px;
+    padding: 9px 0; 
+    color: #222; 
+    text-transform: uppercase;
+}
+header nav .nav-list{
+    list-style:none ;
+    margin-bottom: 0; 
+    display: flex;
+    justify-content: space-around;
+}
+header nav .nav-list .list:active{
+    background: #fdcc52;
+}
+header nav .nav-list .list a{
+    font-size: 15px;
+    display: block;
+    padding: 5px 0; 
+    margin: 9px 0; 
+    text-decoration: none;
+    color: #222;
+    text-transform: uppercase;
+    transform: all 0.3s ease-in-out;
+}
+header nav .nav-list .list a:hover{
+   background: #fdcc52;
+}
+
+
+/* media for header style */
+@media(max-width:575px){
+    header{
+        background: #000;
+    }
+    header .logo{
+        text-align: center;
+    }
+    header nav .nav-list{
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+    header i.icon{
+        display: block;
+    }
+}
+
+/* section one*/
+.one{
+    height: 600px;
+    background: url("../Img/banner-3.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+.one .content{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+.one .content h2{
+    font-size: 45px;
+   margin-bottom: 3px;
+
+}
+.one .content h2 span{
+    color: #fdcc52;
+}
+.one .content p{
+    font-size: 20px;
+}
+.one .content button{
+    color: #fff;
+    background: rgba(253,204,82,.5);
+    width: 150px;
+    text-align: center;
+    padding: 20px 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+/* media for section one */
+@media(max-width:768px){
+    .one .content h2{
+        font-size: 25px;
+    }
+}
+
+/* section two */
+.two .cover{
+    width: 85%;
+    height: 360px;
+    background: white;
+    margin: auto;
+    padding-right: 10px;
+    margin-top: -50px;
+    position: relative;  
+   }
+.two .cover .img img{
+    width: 100%;
+    height: 340px; 
+}
+.two .cover .info h2{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-style: italic;
+}
+.two .cover .info h3{
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.two .cover .info p{
+    font-size: 10px;
+    color: #888;
+}
+.two .cover .info .icon{
+   color: #888;
+   text-align: right;
+   padding: 40px 20px 0;
+   letter-spacing: 5px;
+}
+.two div.bol{
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 8px;
+   }
+.two div.bol span{ 
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background:#888;
+    border-radius: 50%;
+    }
+.two div.bol span:hover{
+      background: #222;
+  }
+  /* media for section two */
+  @media(max-width:768px){
+    .two .cover{
+        height: auto;
+        padding-right: 0;
+        text-align: center;
+    }
+    .two .cover .info .icon{
+        padding:30px 0;
+        padding-right: 10px;
+    }
+  }
+
+  /* section three */
+.three{
+    margin-top: 60px;
+   }
+ .three .subject {
+    margin-bottom: 60px;
+    display: flex;
+ } 
+.three hr.line1{
+    width: 250px;
+    background: #222;
+    justify-content: end;
+    }
+.three p{
+  color: #222;
+  font-size: 25px;
+  justify-content: center;
+}  
+.three hr.line2{
+    width: 250px;
+    background: #222;
+    justify-content: start;
+    }
+ 
+.three .group .test-info{
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+.three .group .test-info img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #888;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.three .group .test-info h2 span{
+    display: inline-block;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+}
+.three .group .test-info h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.three .group .test-info h2.general{
+    font-size: 13px;
+    font-weight: normal;
+}
+.three .group .test-info p{
+    margin-top: 18px;
+    font-size: 10px;
+    color: #ddd;
+}
+.three .group .test-info .social{
+  color: #aaa;
+  display: flex;
+  justify-content: space-around;
+  }
+  /* media for section three */
+  @media(max-width:768px){
+    .three .group .test-info{
+        margin-bottom: 10px;
+    }
+    .three hr.line1{
+        width: 30%;
+    }
+    .three p{
+        font-size: 18px;
+    }
+    .three hr.line2{
+        width: 30%;
+    }
+  }
+
+  /* section four */
+.four{
+    height: auto;
+    background: white;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.four .subject {
+    padding: 80px 0 40px 0;
+    display: flex;
+ } 
+.four hr.line1{
+    width: 250px;
+    background: #222;
+    justify-content: end;
+    }
+.four p{
+    color: #222;
+    font-size: 25px;
+    justify-content: center;
+    }   
+.four hr.line2{
+    width: 250px;
+    background: #222;
+    justify-content: start;
+    }
+ 
+.four .collection .memo{
+    text-align: center;
+    background-color: #fdcc52;
+    padding-bottom: 30px;
+}
+.four .collection .memo h2{
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 35px
+   }
+.four .collection .memo p{
+    font-size: 10px;
+    padding: 0px 12px 15px 12px;
+}
+.four .collection .memo p span{
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+   }
+.four .collection .photo img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.four .collection .title{
+    margin-bottom: 25px;
+}
+.four .collection .title h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.four .collection .title p{
+    font-size: 10px;
+    text-align: left;
+    color: #aaa;
+}
+.four .collection .title span{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+}
+ /* media for section four */
+ @media(max-width:768px){
+    .four hr.line1{
+        width: 30%;
+    }
+    .four p{
+        font-size: 18px;
+    }
+    .four hr.line2{
+        width: 30%;
+    }
+  }
+
+/* footer */
+footer{
+    padding: 10px 0; 
+    text-align: center;
+    background-color: black;
+}
+footer p{
+    font-size: 12px;
+    color: white;
+    margin-top: 15px;
+}
+footer p span{
+    color: #fdcc52;
+}
+
+
+/************************* home.html **************************/
+  /* section one */
+  .one{
+    height: 600px;
+    background: url("../Img/banner-3.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+  }
+.one .proin{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+.one .proin h2{
+    font-size: 37px;
+   margin-bottom: 3px;
+
+}
+.one .proin h2 span{
+    color: #fdcc52;
+}
+.one .proin p{
+    font-size: 20px;
+}
+.one .proin button{
+    color: #fff;
+    background: rgba(253,204,82,.5);
+    width: 150px;
+    text-align: center;
+    padding: 20px 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+/* media for section one */
+@media(max-width:991px){
+    .one .proin h2{
+        font-size: 20px;
+    }
+}
+
+/* section two */
+.two .band{
+    margin-top: -50px;
+    position: relative;  
+}
+.two .band .hotel{
+    background: white; 
+    /* margin: 30px 20px;  */
+}
+ .two .band .hotel .set1{
+     display: flex; 
+    justify-content: space-around;
+   } 
+ .two .band .hotel .set1 button{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    background: white;
+    cursor: pointer;
+} 
+.two .band .hotel .set1 button.b:active{
+    background: #fdcc52;
+} 
+.two .band .hotel .input-group1{
+     margin: 30px 0 22px 25px;
+    
+}  
+.two .band .hotel .input-group2{
+    margin: 15px 0 22px 25px;
+}
+.two .band .hotel .input-group3{
+    margin: 15px 0 22px 25px;
+} 
+.two .band .hotel .input-group4{
+    margin: 15px 0 22px 25px;
+} 
+.two .band .hotel .now{
+    background: #fdcc52;
+    padding: 14px 0;
+    text-align: center;
+} 
+.two .band .hotel .now button{
+    background: #fdcc52;
+    border: 1px solid #444 ;
+    padding: 10px 25px;
+    font-size: 12px;
+     outline: none; 
+     cursor: pointer;
+}
+
+.two .band .newyourk {
+    /* margin: 30px 20px; */
+}
+.two .band .newyourk img{
+    width: 100%;
+}
+.two .band .newyourk .set2{
+    background: #00FF7F;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    }
+.two .band .newyourk .set2 p{
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+.two .band .paris {
+    /* margin: 30px 20px; */
+}
+.two .band .paris img{
+    width: 100%;
+}
+.two .band .paris .set3{
+    background: #FA8072;
+    padding: 15px 0; 
+    display: flex;
+    justify-content: space-around;
+    }
+.two .band .paris .set3 p{
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    } 
+  /* media for section two  */
+  @media(max-width:575px){
+    .two .band .hotel{
+        margin-bottom: 15px;
+    }
+    .two .band .newyourk {
+        margin-bottom: 15px;
+    }
+    .two .band .hotel .input-group1{
+        margin: 30px 0 22px 100px;
+   }  
+   .two .band .hotel .input-group2{
+        margin: 30px 0 22px 100px;
+     }
+   .two .band .hotel .input-group3{
+    margin: 30px 0 22px 100px;
+   } 
+   .two .band .hotel .input-group4{
+    margin: 30px 0 22px 100px; 
+
+   } 
+  }
+  @media(min-width:576px) and (max-width:991px){
+    .two .band .hotel .input-group1{
+        margin: auto;
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    .two .band .hotel .input-group2{
+        margin: auto;
+        font-size: 12px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .two .band .hotel .input-group3{
+        margin: auto;
+        font-size: 12px;
+        margin-top: 15px; 
+        margin-left: 15px;
+    }
+    .two .band .hotel .input-group4{
+        margin: auto;
+        font-size: 12px;
+        margin: 15px 0 20px 15px; 
+    }
+  }
+
+  /* section three */
+  .three{
+    margin-top: 60px;
+   }
+ .three .lorem {
+    margin-bottom: 60px;
+    display: flex;
+ } 
+.three hr.line1{
+    width: 250px;
+    background: #222;
+    justify-content: end;
+    }
+.three p{
+  color: #222;
+  font-size: 25px;
+  justify-content: center;
+}  
+.three hr.line2{
+    width: 250px;
+    background: #222;
+    justify-content: start;
+ }
+ .three .proin .travel{
+    background: white;
+    
+}
+.three .proin .travel img{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px; 
+}
+.three .proin .travel p{
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.three .proin .travel span{
+    display: inline-block;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 12px;
+}
+.three .proin .travel table{
+    border: 1px solid #888;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.three .proin .travel table tr td.nn{
+    padding: 5px 15px;
+}
+.three .proin .travel table tr td p{
+   padding: 5px 28px;
+   margin: auto;
+}
+.three .proin .travel table tr td.na{
+   padding:  5px 15px;
+}
+.three .holidy p{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+.three .holidy p span{
+    display: inline-block;
+    color: blue;
+}
+/* media for section three */
+@media(max-width:575px){
+    .three .proin .travel{
+        text-align: center;
+    }
+    .three .proin .travel table {
+        margin: auto;
+    }
+}
+@media(max-width:768px){
+    .three .proin .travel{
+        margin-bottom: 15px;
+    }
+    .three .lorem hr.line1{
+        width: 25%;
+    }
+    .three .lorem p{
+        font-size: 18px;
+    }
+    .three .lorem hr.line2{
+        width: 25%;
+    }
+    .three .proin .travel table tr td.nn{
+         padding: 5px 21px; 
+    }
+    .three .proin .travel table tr td p{
+       padding: 5px 31px; 
+       margin: auto;
+    }
+    .three .proin .travel table tr td.na{
+       padding:  5px 21px; 
+    }
+  }
+  @media(min-width:768px) and (max-width:991px){
+    .three .lorem p{
+        font-size: 15px;
+    }
+    .three .proin .travel p{
+        font-size: 10px;
+    }
+    .three .proin .travel table tr td.nn{
+        padding: 5px 10px; 
+   }
+   .three .proin .travel table tr td p{
+      padding: 5px 18px; 
+      margin: auto;
+   }
+   .three .proin .travel table tr td.na{
+      padding:  5px 10px; 
+   }
+}
+
+ /* section four */
+ .four{
+    height: auto;
+    background: white;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+.four .lorem {
+    padding: 80px 0 40px 0;
+    display: flex;
+ } 
+.four hr.line1{
+    width: 250px;
+    background: #222;
+    justify-content: end;
+    }
+.four p{
+    color: #222;
+    font-size: 25px;
+    justify-content: center;
+    }   
+.four hr.line2{
+    width: 250px;
+    background: #222;
+    justify-content: start;
+    }
+ .four .pop .card{
+     margin-bottom: 40px;
+     border-radius: 0;
+ }
+.four .pop img{
+     width: 100%;
+     height: 100%;
+    
+ } 
+ .four .pop p{
+     font-size: 11px;
+     padding: 25px 0 0 0;
+     color: #444;
+     margin-bottom: 63px;
+ }
+ .four .pop  table{
+    border: 1px solid #888;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.four .pop table tr td.nn{
+    padding: 10px 18px;
+}
+.four .pop table tr td p.nd{
+   padding: 10px 22px;
+   margin: auto;
+   text-transform: uppercase;
+   font-size: 15px;
+}
+.four .pop table tr td.na{
+   padding:  10px 18px;
+}
+/* media for section four */
+@media(max-width:991px){
+    .four .lorem{
+        margin-bottom: 15px;
+    }
+    .four .lorem hr.line1{
+        width: 25%;
+    }
+    .four .lorem p{
+        font-size: 18px;
+    }
+    .four .lorem hr.line2{
+        width: 25%;
+    }
+}
+@media(max-width:575px){
+    .four .pop .card{
+        text-align: center;
+    }
+    .four .pop  .card table{
+        margin: auto;
+    }
+}
+@media(min-width:575px) and (max-width:768px){
+     .four .pop p{
+         font-size: 5px;
+     }
+     .four .pop table tr td.nn{
+         padding: 10px 5px;
+     }
+     .four .pop table tr td p.nd{
+        padding: 10px 5px;
+        margin: auto;
+        text-transform: uppercase;
+        font-size: 10px;
+     }
+     .four .pop table tr td.na{
+        padding:  10px 5px;
+     }
+ }
+@media(min-width:768px) and (max-width:991px){
+   .four .pop p{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .four .pop table tr td.nn{
+        padding: 10px 8px;
+    }
+    .four .pop table tr td p.nd{
+       padding: 10px 16px;
+       margin: auto;
+       text-transform: uppercase;
+       font-size: 13px;
+    }
+    .four .pop table tr td.na{
+       padding:  10px 8px;
+    }
+}
+
+/************************* ourtours.html **************************/
+/* Header style */
+header{
+    background: transparent;
+    height: auto;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+header .logo h2{
+    font-size: 25px;
+    padding: 9px 0; 
+    color: #222; 
+    text-transform: uppercase;
+}
+header nav .nav-list{
+    list-style:none ;
+    margin-bottom: 0; 
+    display: flex;
+    justify-content: space-around;
+}
+header nav .nav-list .list:active{
+    background: #fdcc52;
+}
+header nav .nav-list .list a{
+    font-size: 15px;
+    display: block;
+    padding: 5px 0; 
+    margin: 9px 0; 
+    text-decoration: none;
+    color: #222;
+    text-transform: uppercase;
+    transform: all 0.3s ease-in-out;
+}
+header nav .nav-list .list a:hover{
+   background: #fdcc52;
+}
+
+
+/* media for header style */
+@media(max-width:575px){
+    header{
+        background: #000;
+    }
+    header .logo{
+        text-align: center;
+    }
+    header nav .nav-list{
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+    header i.icon{
+        display: block;
+    }
+}
+
+/* section one*/
+.on{
+    height: 600px;
+    background: url("../Img/banner-2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+.on .find{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+.on .find h2{
+    font-size: 45px;
+   margin-bottom: 3px;
+
+}
+.on .find h2 span{
+    color: #fdcc52;
+}
+.on .find p{
+    font-size: 20px;
+}
+.on .find button{
+    color: #fff;
+    background: rgba(253,204,82,.5);
+    width: 150px;
+    text-align: center;
+    padding: 20px 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+/* media for section one */
+@media(max-width:768px){
+    .on .find h2{
+        font-size: 25px;
+    }
+}
+/* section three */
+.three .our .bind{
+    background: #fff; 
+   margin-bottom: 30px;
+}
+.three .our img{
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+ .three .our .bind .quis{
+    display: flex;
+    justify-content: space-around; 
+}
+.three .our .bind .quis p{
+    font-size: 12px;
+}
+.three .our .bind .quis p.sec{
+    color: #888;
+}
+.three .our .bind span{
+    font-size: 12px;
+    padding: 0 0 0px 35px;
+    text-transform: uppercase;
+    color: #888;
+   
+}
+.three .our .bind .day{
+    background: #1E90FF;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 0 10px 35px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.three .our .bind .day span{
+    padding: 12px 19px;
+    color: white;
+    text-align: center;
+    margin-left:230px 
+  } 
+  /* media for section three */
+ 
+  @media(min-width:575px) and (max-width:768px){
+    .three .our .bind .day span{
+     margin-left:288px 
+      } 
+  }
+  @media(max-width:575px){
+    .three .our .bind .day{
+        font-size: 8px;
+       }
+  }
+  @media(min-width:768px) and (max-width:991px){
+    .three .our .bind .day{
+     font-size: 10px;
+       }
+    .three .our .bind .day span{
+        margin-left:213px;
+        padding: 26px 20px 11px 20px;
+    }
+  }
+
+   /* section four */
+ .four .lorem {
+    margin-bottom: 60px;
+    display: flex;
+ } 
+.four hr.line1{
+    width: 250px;
+    background: #222;
+    justify-content: end;
+    }
+.four p{
+  color: #222;
+  font-size: 25px;
+  justify-content: center;
+}  
+.four hr.line2{
+    width: 250px;
+    background: #222;
+    justify-content: start;
+ }
+ .four .proin .travel{
+    background: white;
+    }
+.four .proin .travel img{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px; 
+}
+.four .proin .travel p{
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.four .proin .travel hr{
+    width: 80%;
+   margin: auto;
+}
+.four .proin .travel .icon{
+    display: block;
+    padding-left: 15px;
+}
+.four .proin .travel .fa-star{
+    padding-top: 12px;
+    font-size: 12px;
+    color: #FACC2E;
+}
+ .four .proin .travel .gray .fa-star{
+    padding-top: 12px;
+    font-size: 12px;
+    color: #888;
+} 
+.four .proin .travel span{
+    display: block;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.four .proin .travel button{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: gray;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+.four .holidy p{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+/* media for section four */
+@media(max-width:768px){
+    .four .lorem {
+        margin-bottom: 20px;
+    }
+    .four .proin .travel{
+        margin-bottom: 15px;
+    }
+}
+
+/************************* contact.html **************************/
+/* section two */
+.to{
+    background: white;
+}
+.to .cap{
+    width: 95%;
+    height: 360px;
+    background: #ddd;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: -50px;
+    position: relative;  
+   }
+.to .cap .photo img{
+    width: 100%;
+    height: 100%;
+    margin: 40px 0 0 15px;
+}
+.to .cap .of h2{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-style: italic;
+}
+.to .cap .of h3{
+    font-size: 10px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.to .cap .of p{
+    font-size: 10px;
+    color: #888;
+}
+.to .cap .of .icon{
+   color: #888;
+   text-align: right;
+   padding: 40px 20px 0;
+   letter-spacing: 5px;
+}
+
+ /* media for section two */
+ @media(max-width:768px){
+    .to .cap{
+        height: auto;
+        padding-right: 0;
+        text-align: center;
+    }
+    .to .cap .photo img{
+        width: 80%;
+    }
+    .to .cap .of .icon{
+        padding:30px 0;
+        padding-right: 25px;
+    }
+}
+@media(max-width:991px){
+    .to .cap .of .icon{
+        padding: 0px 10px 0px 0;
+}
+}
+
+/* section three */
+.thre{
+    background: white;
+    height: 600px; 
+    padding-top: 80px;
+}
+ .thre .subject {
+    margin-bottom: 60px;
+    display: flex;
+ } 
+.thre hr.line1{
+    width: 250px;
+    background: #222;
+    justify-content: end;
+    }
+.thre p{
+  color: #222;
+  font-size: 25px;
+  justify-content: center;
+}  
+.thre hr.line2{
+    width: 250px;
+    background: #222;
+    justify-content: start;
+    }
+    .thre .map img{
+        width: 100%;
+        height: 330px;
+    }
+ .thre .map input{
+     width: 100%;
+     margin-bottom: 20px;
+     padding-left: 10px;
+ }
+ .thre .map textarea{
+     padding-left: 10px;
+     width: 100%;
+ }
+ .thre .map input.sub{
+    background: #FACC2E;
+    outline: none;
+    border: 0;
+    font-size: 12px;
+    font-style: italic;
+    padding: 8px 0;
+    cursor: pointer;
+    margin-top: 12px;
+ }
+ .thre .map i{
+     width: 30px;
+     height: 30px;
+     text-align: center;
+     line-height: 30px;
+     color: #fff;
+     margin-top: 15px;
+ }
+ .thre .map i:nth-of-type(1){
+     background: #3b5998;
+ }
+ .thre .map i:nth-of-type(2){
+    background: #c32361;
+}
+.thre .map i:nth-of-type(3){
+    background: #1da1f2;
+}
+.thre .map i:nth-of-type(4){
+    background: #7232bd;
+}
+.thre .map i:nth-of-type(5){
+    background: #db4437;
+}
+/* media for section three */
+@media(max-width:768px){
+    .thre{
+        height: auto;
+    }
+    .thre hr.line1{
+        width: 30%;
+    }
+    .thre p{
+        font-size: 18px;
+    }
+    .thre hr.line2{
+        width: 30%;
+    }
+    .thre .map i {
+       margin-bottom: 15px;
+    }
+}
+
+ 
+
