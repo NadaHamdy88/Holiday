@@ -73,7 +73,7 @@ header nav .nav-list .list a:hover{
 /* section one*/
 .one{
     height: 600px;
-    background: url("../Img/banner-3.jpg") no-repeat;
+    background: url("../img/banner-3.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
@@ -359,7 +359,7 @@ footer p span{
   /* section one */
   .one{
     height: 600px;
-    background: url("../Img/banner-3.jpg") no-repeat;
+    background: url("../img/banner-3.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
@@ -846,7 +846,7 @@ header nav .nav-list .list a:hover{
 /* section one*/
 .on{
     height: 600px;
-    background: url("../Img/banner-2.jpg") no-repeat;
+    background: url("../img/banner-2.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
